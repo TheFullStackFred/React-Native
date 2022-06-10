@@ -1,12 +1,14 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react'
-import { StyleSheet, Text, View, Image, FlatList } from 'react-native'
+import { Text, View, FlatList } from 'react-native'
 
 export default function FetchCountries() {
   const [data, setData] = useState([])
 
   const getData = async () => {
-    const { data } = await axios.get(`https://restcountries.com/v3.1/all`)
+    const { data } = await axios.get(
+      `https://mario-kart-tour-api.herokuapp.com/api/v1/drivers`
+    )
 
     setData(data)
   }
@@ -18,10 +20,10 @@ export default function FetchCountries() {
       data={data}
       renderItem={({ item }) => (
         <View>
-          <Text>{item.name.common}</Text>
+          <Text>{item.name}</Text>
         </View>
       )}
-      keyExtractor={(country) => country.name.common}
+      keyExtractor={(country) => country.name}
       s
     />
   )
