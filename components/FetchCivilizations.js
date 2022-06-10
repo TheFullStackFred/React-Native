@@ -24,7 +24,6 @@ export default function FetchCountries() {
         </View>
       )}
       keyExtractor={(civilizations) => civilizations.id}
-      s
     />
   )
 }
