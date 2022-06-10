@@ -22,6 +22,7 @@ export default function FetchCountries() {
         </View>
       )}
       keyExtractor={(country) => country.name.common}
+      s
     />
   )
 }

@@ -1,27 +1,27 @@
-import { StatusBar } from 'expo-status-bar'
-import { StyleSheet, Text, View, Image, FlatList } from 'react-native'
-import { useState, useEffect } from 'react'
-import axios from 'axios'
+import * as React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import FetchCountries from './FetchCountries'
+import HomeScreen from './screens/HomeScreen'
+import { View, SafeAreaView } from 'react-native'
+
+const Stack = createNativeStackNavigator()
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <View style={styles.container}>
-        <StatusBar style="auto" />
-        <FetchCountries />
-      </View>
-    </NavigationContainer>
+    <SafeAreaView>
+      <NavigationContainer>
+        <View>
+          <HomeScreen />
+          <Stack.Navigator>
+            <Stack.Screen
+              name="Home"
+              component={HomeScreen}
+              options={{ title: 'Welcome' }}
+            />
+            {/* <Stack.Screen name="Profile" component={ProfileScreen} /> */}
+          </Stack.Navigator>
+        </View>
+      </NavigationContainer>
+    </SafeAreaView>
   )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'hotpink',
-    alignItems: 'center',
-    justifyContent: 'center'
-  }
-})
