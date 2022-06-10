@@ -7,10 +7,10 @@ export default function FetchCountries() {
 
   const getData = async () => {
     const { data } = await axios.get(
-      `https://mario-kart-tour-api.herokuapp.com/api/v1/drivers`
+      `https://age-of-empires-2-api.herokuapp.com/api/v1/civilizations`
     )
 
-    setData(data)
+    setData(data.civilizations)
   }
   useEffect(() => {
     getData()
@@ -23,7 +23,7 @@ export default function FetchCountries() {
           <Text>{item.name}</Text>
         </View>
       )}
-      keyExtractor={(country) => country.name}
+      keyExtractor={(civilizations) => civilizations.id}
       s
     />
   )
