@@ -1,5 +1,5 @@
 import { Text } from 'react-native'
 
-export default function CountryScreens() {
-  return <Text>CountryScreen</Text>
+export default function CivilizationScreen() {
+  return <Text>CivilizationScreen</Text>
 }

@@ -9,7 +9,7 @@ const Tab = createBottomTabNavigator()
 
 export default function App() {
   return (
-    <NavigationContainer>
+    <NavigationContainer style={{ flex: 1, backgroundColor: '#ffffff' }}>
       <Tab.Navigator
         screenOptions={({ route }) => ({
           tabBarIcon: ({ focused, color, size }) => {
