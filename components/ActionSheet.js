@@ -7,7 +7,7 @@ import {
   TextInput,
   Alert
 } from 'react-native'
-import styles from '../styles/styles'
+import styles from '../styles/ActionSheetStyle'
 
 export default function ActionSheet() {
   const [inputValue, setInputValue] = useState('')
