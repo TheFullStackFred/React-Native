@@ -1,21 +1,24 @@
 import * as React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
-import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import CivilizationsScreen from './screens/CivilizationsScreen'
 import AboutScreen from './screens/AboutScreen'
 
-const Stack = createNativeStackNavigator()
+const Tab = createBottomTabNavigator()
+
+function MyTabs() {
+  return (
+    <Tab.Navigator>
+      <Tab.Screen name="Home" component={CivilizationsScreen} />
+      <Tab.Screen name="About" component={AboutScreen} />
+    </Tab.Navigator>
+  )
+}
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen
-          name="Civilizations in AOE 2"
-          component={CivilizationsScreen}
-        />
-        <Stack.Screen name="About" component={AboutScreen} />
-      </Stack.Navigator>
+      <MyTabs />
     </NavigationContainer>
   )
 }
