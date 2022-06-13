@@ -1,7 +1,6 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 import { Text, View, FlatList } from 'react-native'
-import styles from '../styles/GlobalStyles'
 
 export default function FetchCountries() {
   const [data, setData] = useState([])
