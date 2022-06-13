@@ -1,6 +1,7 @@
 import { Text, View } from 'react-native'
 import ActionSheet from '../components/ActionSheet'
 import Switch from '../components/Switch'
+import InputAccessory from '../components/InputAccessory'
 export default function AboutScreen() {
   return (
     <View
@@ -12,6 +13,7 @@ export default function AboutScreen() {
     >
       <Text>About screen</Text>
       <ActionSheet />
+      <InputAccessory />
       <Switch />
     </View>
   )

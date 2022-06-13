@@ -7,7 +7,7 @@ import {
   TextInput,
   Alert
 } from 'react-native'
-import styles from '../styles/ActionSheetStyle'
+import styles from '../styles/GlobalStyles'
 
 export default function ActionSheet() {
   const [inputValue, setInputValue] = useState('')
@@ -24,7 +24,7 @@ export default function ActionSheet() {
     )
 
   return (
-    <View style={styles.container}>
+    <View>
       <TextInput
         style={styles.input}
         onChangeText={(value) => setInputValue(value)}
