@@ -21,7 +21,10 @@ export default function FetchCivilizations({}) {
         <TouchableOpacity
           onPress={() => {
             navigation.navigate('Civ', {
-              civName: item.name
+              civName: item.name,
+              civExpansion: item.expansion,
+              civArmyType: item.army_type,
+              civTeamBonus: item.team_bonus
             })
           }}
         >
