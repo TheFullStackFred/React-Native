@@ -33,7 +33,7 @@ export default function ActionSheet() {
         justifyContent: 'center'
       }}
     >
-      <Text style={styles.titleText}>ActionSheet</Text>
+      <Text style={styles.titleText}>This is ActionSheet</Text>
       <TextInput
         style={styles.input}
         onChangeText={(value) => setInputValue(value)}
