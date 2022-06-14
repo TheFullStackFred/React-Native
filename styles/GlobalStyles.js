@@ -15,6 +15,14 @@ const styles = StyleSheet.create({
   button: {
     backgroundColor: 'springgreen',
     padding: 15
+  },
+  titleText: {
+    fontSize: 25,
+    fontWeight: 'bold'
+  },
+  baseText: {
+    fontFamily: 'Cochin',
+    fontSize: 20
   }
 })
 

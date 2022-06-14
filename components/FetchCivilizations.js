@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Text, TouchableOpacity, FlatList } from 'react-native'
+import styles from '../styles/GlobalStyles'
 
 export default function FetchCivilizations(navigation) {
   const [civilizations, setCivilizations] = useState(null)
@@ -22,7 +23,7 @@ export default function FetchCivilizations(navigation) {
         //   })
         // }}
         >
-          <Text>{item.name}</Text>
+          <Text style={styles.baseText}>{item.name}</Text>
         </TouchableOpacity>
       )}
       keyExtractor={(civilizations) => civilizations.id}

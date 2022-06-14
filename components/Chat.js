@@ -9,7 +9,7 @@ export function Chat() {
     setMessages([
       {
         _id: 1,
-        text: 'Hello developer',
+        text: 'Hello Fred',
         createdAt: new Date(),
         user: {
           _id: 2,
@@ -29,9 +29,9 @@ export function Chat() {
   return (
     <View
       style={{
-        width: 400,
-        height: 400,
-        backgroundColor: 'powderblue'
+        width: '100%',
+        height: '100%',
+        backgroundColor: '#BCEBCB'
       }}
     >
       <GiftedChat

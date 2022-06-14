@@ -1,4 +1,4 @@
-import { Text, View } from 'react-native'
+import { View } from 'react-native'
 import ActionSheet from '../components/ActionSheet'
 import Switch from '../components/Switch'
 import InputAccessory from '../components/InputAccessory'
@@ -9,10 +9,10 @@ export default function AboutScreen() {
       style={{
         flex: 1,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        backgroundColor: '#BCEBCB'
       }}
     >
-      <Text>About screen</Text>
       <ActionSheet />
       <InputAccessory />
       <Switch />
