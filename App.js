@@ -2,8 +2,8 @@ import * as React from 'react'
 import Ionicons from '@expo/vector-icons/Ionicons'
 import { NavigationContainer } from '@react-navigation/native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-
 import CivilizationsScreen from './screens/CivilizationsScreen'
+import ChatScreen from './screens/ChatScreen'
 import AboutScreen from './screens/AboutScreen'
 
 const Tab = createBottomTabNavigator()
@@ -21,6 +21,9 @@ export default function App() {
             } else if (route.name === 'About') {
               // eslint-disable-next-line no-unused-vars
               iconType = focused = 'information-circle-outline'
+            } else if (route.name === 'Chat') {
+              // eslint-disable-next-line no-unused-vars
+              iconType = focused = 'chatbubble'
             }
 
             return <Ionicons name={iconType} size={size} color={color} />
@@ -30,6 +33,7 @@ export default function App() {
         })}
       >
         <Tab.Screen name="Home" component={CivilizationsScreen} />
+        <Tab.Screen name="Chat" component={ChatScreen} />
         <Tab.Screen name="About" component={AboutScreen} />
       </Tab.Navigator>
     </NavigationContainer>
