@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react'
+import { useNavigation } from '@react-navigation/native'
 import { Text, TouchableOpacity, FlatList } from 'react-native'
 import styles from '../styles/GlobalStyles'
 
-export default function FetchCivilizations(navigation) {
+export default function FetchCivilizations({}) {
+  const navigation = useNavigation()
   const [civilizations, setCivilizations] = useState(null)
 
   useEffect(() => {
@@ -17,11 +19,11 @@ export default function FetchCivilizations(navigation) {
       data={civilizations}
       renderItem={({ item }) => (
         <TouchableOpacity
-        // onPress={() => {
-        //   navigation.navigate('Civ', {
-        //     civName: item.name
-        //   })
-        // }}
+          onPress={() => {
+            navigation.navigate('Civ', {
+              civName: item.name
+            })
+          }}
         >
           <Text style={styles.baseText}>{item.name}</Text>
         </TouchableOpacity>
