@@ -2,6 +2,7 @@ import * as React from 'react'
 import Ionicons from '@expo/vector-icons/Ionicons'
 import { NavigationContainer } from '@react-navigation/native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context'
 import CivilizationsScreen from './screens/CivilizationsScreen'
 import AboutScreen from './screens/AboutScreen'
 

@@ -18,7 +18,7 @@ export default function InputAccessory() {
           inputAccessoryViewID={inputAccessoryViewID}
           onChangeText={setText}
           value={text}
-          placeholder={'Please type here…'}
+          placeholder={'Enter whatever on your mind'}
         />
       </ScrollView>
       <InputAccessoryView nativeID={inputAccessoryViewID}>

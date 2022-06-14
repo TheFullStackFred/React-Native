@@ -16,11 +16,11 @@ export default function FetchCivilizations(navigation) {
       data={civilizations}
       renderItem={({ item }) => (
         <TouchableOpacity
-          onPress={() => {
-            navigation.navigate('Civ', {
-              civName: item.name
-            })
-          }}
+        // onPress={() => {
+        //   navigation.navigate('Civ', {
+        //     civName: item.name
+        //   })
+        // }}
         >
           <Text>{item.name}</Text>
         </TouchableOpacity>
