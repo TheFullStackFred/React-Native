@@ -19,10 +19,8 @@ export default function App() {
             if (route.name === 'Home') {
               iconType = focused = 'home-outline'
             } else if (route.name === 'About') {
-              // eslint-disable-next-line no-unused-vars
               iconType = focused = 'information-circle-outline'
             } else if (route.name === 'Chat') {
-              // eslint-disable-next-line no-unused-vars
               iconType = focused = 'chatbubble'
             }
 

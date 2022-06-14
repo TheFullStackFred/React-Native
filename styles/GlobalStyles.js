@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   input: {
-    backgroundColor: 'hotpink',
+    backgroundColor: 'white',
     margin: 20,
     padding: 20,
     width: '80%'

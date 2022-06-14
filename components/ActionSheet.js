@@ -24,7 +24,16 @@ export default function ActionSheet() {
     )
 
   return (
-    <View>
+    <View
+      style={{
+        borderWidth: 4,
+        borderStyle: 'solid',
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center'
+      }}
+    >
+      <Text style={styles.titleText}>ActionSheet</Text>
       <TextInput
         style={styles.input}
         onChangeText={(value) => setInputValue(value)}
