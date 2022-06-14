@@ -4,19 +4,8 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import CivilizationsScreen from './screens/CivilizationsScreen'
 import AboutScreen from './screens/AboutScreen'
-import CivilizationScreen from './screens/CivilizationScreen'
-import { createStackNavigator } from '@react-navigation/stack'
 
 const Tab = createBottomTabNavigator()
-const Stack = createStackNavigator()
-
-function StackRnRoutes() {
-  return (
-    <Stack.Navigator initialRouteName="CivilizationScreen">
-      <Stack.Screen name="CivilizationScreen" component={CivilizationScreen} />
-    </Stack.Navigator>
-  )
-}
 
 export default function App() {
   return (
@@ -42,7 +31,6 @@ export default function App() {
         <Tab.Screen name="Home" component={CivilizationsScreen} />
         <Tab.Screen name="About" component={AboutScreen} />
       </Tab.Navigator>
-      {/* <StackRnRoutes /> */}
     </NavigationContainer>
   )
 }
