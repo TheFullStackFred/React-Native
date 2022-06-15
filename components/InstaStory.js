@@ -25,7 +25,7 @@ export default function Insta() {
       array.push({
         user_id: i,
         user_image: 'https://picsum.photos/200/300?random=' + Math.random(),
-        user_name: 'Test User ' + i,
+        user_name: 'Mahdi ' + i,
         stories: storyArray
       })
     }
