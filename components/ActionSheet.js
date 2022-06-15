@@ -15,7 +15,7 @@ export default function ActionSheet() {
   const onLongPress = () =>
     ActionSheetIOS.showActionSheetWithOptions(
       {
-        options: ['Cancel', 'Clean Input'],
+        options: ['Cancel', 'Clear Input'],
         destructiveButtonIndex: 1,
         cancelButtonIndex: 0,
         userInterfaceStyle: 'dark'

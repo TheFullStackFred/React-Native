@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { StyleSheet, Switch, View, Text } from 'react-native'
+import { Switch, View, Text } from 'react-native'
 import styles from '../styles/GlobalStyles'
 export default class SwitchExample extends Component {
   state = {
