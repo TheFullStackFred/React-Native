@@ -14,7 +14,8 @@ const styles = StyleSheet.create({
   },
   button: {
     backgroundColor: '#FE4A49',
-    padding: 15
+    padding: 10,
+    marginBottom: 5
   },
   titleText: {
     fontSize: 25,
