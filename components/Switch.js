@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { StyleSheet, Switch, View, Text } from 'react-native'
-
+import styles from '../styles/GlobalStyles'
 export default class SwitchExample extends Component {
   state = {
     switchValue: false
@@ -8,8 +8,18 @@ export default class SwitchExample extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.textStyle}>
+      <View
+        style={{
+          borderWidth: 4,
+          borderStyle: 'solid',
+          flex: 1,
+          alignItems: 'center',
+          justifyContent: 'center',
+          marginTop: 5
+        }}
+      >
+        <Text style={styles.titleText}>ActionSheet</Text>
+        <Text style={styles.baseText}>
           {this.state.switchValue ? 'True' : 'False'}
         </Text>
         <Switch
@@ -21,17 +31,3 @@ export default class SwitchExample extends Component {
     )
   }
 }
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center'
-  },
-  textStyle: {
-    margin: 24,
-    fontSize: 25,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    color: '#344953'
-  }
-})

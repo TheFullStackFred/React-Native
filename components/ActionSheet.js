@@ -30,10 +30,11 @@ export default function ActionSheet() {
         borderStyle: 'solid',
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        marginTop: 5
       }}
     >
-      <Text style={styles.titleText}>This is ActionSheet</Text>
+      <Text style={styles.titleText}>ActionSheet</Text>
       <TextInput
         style={styles.input}
         onChangeText={(value) => setInputValue(value)}

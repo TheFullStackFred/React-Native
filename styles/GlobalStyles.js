@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     width: '80%'
   },
   button: {
-    backgroundColor: 'springgreen',
+    backgroundColor: '#FE4A49',
     padding: 15
   },
   titleText: {

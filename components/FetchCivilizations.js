@@ -3,7 +3,7 @@ import { useNavigation } from '@react-navigation/native'
 import { Text, TouchableOpacity, FlatList } from 'react-native'
 import styles from '../styles/GlobalStyles'
 
-export default function FetchCivilizations({}) {
+export default function FetchCivilizations() {
   const navigation = useNavigation()
   const [civilizations, setCivilizations] = useState(null)
 
@@ -20,7 +20,7 @@ export default function FetchCivilizations({}) {
       renderItem={({ item }) => (
         <TouchableOpacity
           onPress={() => {
-            navigation.navigate('Civ', {
+            navigation.navigate('Chosen Civilization', {
               civName: item.name,
               civExpansion: item.expansion,
               civArmyType: item.army_type,

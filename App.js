@@ -48,7 +48,11 @@ export default function App() {
           component={Civilization}
           options={{ headerShown: false }}
         />
-        <Stack.Screen name="Civ" component={CivilizationScreen} />
+        <Stack.Screen
+          name="Chosen Civilization"
+          component={CivilizationScreen}
+          // options={{ headerShown: false }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   )

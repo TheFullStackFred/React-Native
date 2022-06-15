@@ -12,7 +12,7 @@ export default function AboutScreen() {
           flex: 1,
           justifyContent: 'center',
           alignItems: 'center',
-          backgroundColor: '#BCEBCB'
+          backgroundColor: '#FED766'
         }}
       >
         <ActionSheet />

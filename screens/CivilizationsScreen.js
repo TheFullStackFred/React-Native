@@ -9,7 +9,7 @@ export default function CivilizationsScreen() {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#BCEBCB'
+        backgroundColor: '#FED766'
       }}
     >
       <Text style={styles.titleText}>Civilizations in Age of Empires 2</Text>
